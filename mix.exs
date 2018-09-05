@@ -27,16 +27,16 @@ defmodule AMQP.Mixfile do
 
   defp deps do
     [
-      {:amqp_client, "~> 3.7.3"},
-      {:rabbit_common, "~> 3.7.3"},
+      {:amqp_client, "~> 3.7.7"},
+      {:rabbit_common, "~> 3.7.7"},
 
       # We have an issue on rebar3 dependencies.
       # https://github.com/pma/amqp/issues/78
       {:goldrush, "~> 0.1.0"},
       {:jsx, "~> 2.8"},
-      {:lager, "~> 3.5"},
+      {:lager, "~> 3.6.3"},
       {:ranch, "~> 1.4"},
-      {:ranch_proxy_protocol, "~> 1.4"},
+      {:ranch_proxy_protocol, "~> 2.0", override: true},
       {:recon, "~> 2.3.2"},
 
       {:earmark, "~> 1.0", only: :docs},
